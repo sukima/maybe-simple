@@ -1,0 +1,42 @@
+{
+  "name": "maybe-simple",
+  "version": "0.0.0",
+  "description": "Simple Maybe monade with invoke and nested object properties support",
+  "main": "index.js",
+  "repository": "https://github.com/sukima/maybe-simple",
+  "author": "Devin Weaver (@sukima) <suki@tritarget.org>",
+  "license": "MIT",
+  "scripts": {
+    "preversion": "yarn run docs && git add README.md",
+    "docs": "jsdoc2md > README.md",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.0.1",
+    "jsdoc-to-markdown": "^3.0.0",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "mocha": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2015,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": false
+      }
+    }
+  },
+  "jsdoc2md": {
+    "template": "docs/README.hbs",
+    "files": [
+      "index.js"
+    ],
+    "global-index-format": "none",
+    "heading-depth": 2,
+    "example-lang": "js"
+  }
+}
