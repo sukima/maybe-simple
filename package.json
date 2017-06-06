@@ -1,6 +1,6 @@
 {
   "name": "maybe-simple",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple Maybe monade with invoke and nested object properties support",
   "main": "index.js",
   "repository": "https://github.com/sukima/maybe-simple",
