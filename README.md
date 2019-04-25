@@ -11,6 +11,9 @@ object from an API. I need a simple way to grab data deep down in a safe way
 without having JS blowup with undefined problems. Rails has a `try`, Swift has
 optionals, CoffeeScript has a `?` guard, but JS has *nothing* (pun intended).
 
+If this is too much you can accomplish much of this with 20 lines of code.
+Check out the [compact version](https://tritarget.org/#maybe.js).
+
 ## Install
 
 #### NPM
